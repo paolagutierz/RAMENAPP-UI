@@ -1,19 +1,15 @@
-import { connect } from "react-redux";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import React from 'react'
+import { Route, Routes } from "react-router-dom";
+import About from './pages/About';
+import Home from './pages/Home';
 
 const AppRouter = () => {
-  return (
-    <Router>
-      <Switch>
-        <Route />
-      </Switch>
-    </Router>
-  );
-};
+    return (
+        <Routes>
+            <Route path="/" element={<Home>Hello Grommet!</Home>} />
+            <Route path="/about" element={<About />} />
+        </Routes>
+    )
+}
 
-export default AppRouter;
+export default AppRouter
