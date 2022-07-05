@@ -1,15 +1,6 @@
-import { Box, Grommet } from 'grommet';
-import AppRouter from './AppRouter';
-
-const theme = {
-  global: {
-    font: {
-      family: 'Roboto',
-      size: '18px',
-      height: '20px',
-    },
-  },
-};
+import { Box, Grommet } from "grommet";
+import AppRouter from "./AppRouter";
+import theme from "./theme";
 
 function App() {
   return (

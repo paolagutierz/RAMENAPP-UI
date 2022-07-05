@@ -1,15 +1,17 @@
-import React from 'react'
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import About from './pages/About';
-import Home from './pages/Home';
+import Menu from "./pages/Menu";
+import Home from "./pages/Home";
+import Cart from "./pages/Cart";
 
 const AppRouter = () => {
-    return (
-        <Routes>
-            <Route path="/" element={<Home>Hello Grommet!</Home>} />
-            <Route path="/about" element={<About />} />
-        </Routes>
-    )
-}
+  return (
+    <Routes>
+      <Route path="/" element={<Home>Hello Grommet!</Home>} />
+      <Route path="/menu" element={<Menu />} />
+      <Route path="/carrito" element={<Cart />} />
+    </Routes>
+  );
+};
 
-export default AppRouter
+export default AppRouter;
