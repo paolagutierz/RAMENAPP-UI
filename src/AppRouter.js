@@ -7,7 +7,7 @@ import Cart from "./pages/Cart";
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home>Hello Grommet!</Home>} />
+      <Route path="/" element={<Home></Home>} />
       <Route path="/menu" element={<Menu />} />
       <Route path="/carrito" element={<Cart />} />
     </Routes>

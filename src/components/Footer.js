@@ -1,9 +1,12 @@
-import React from 'react'
+import { Box } from "grommet";
+import React from "react";
 
 const Footer = () => {
-    return (
-        <div>Footer</div>
-    )
-}
+  return (
+    <Box>
+      <div>Footer</div>
+    </Box>
+  );
+};
 
-export default Footer
+export default Footer;
