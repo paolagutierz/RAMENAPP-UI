@@ -1,13 +1,12 @@
 import React from 'react'
 import {   Box, Grommet } from 'grommet';
+import CarouselSlider from '../components/Slider';
 import Page from '../components/Page';
 
-const Home = (props) => {
+const Home = () => {
     return (
         <Page>
-            <Box {...props}
-            
-            />
+            <CarouselSlider></CarouselSlider>
         </Page>
     )
 }
