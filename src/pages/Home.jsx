@@ -1,5 +1,4 @@
 import React from 'react'
-import {   Box, Grommet } from 'grommet';
 import Carousel from '../components/Carousel';
 import Page from '../components/Page';
 
