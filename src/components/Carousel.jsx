@@ -2,14 +2,15 @@ import React from "react";
 import Carousel from 'react-bootstrap/Carousel'
 
 const CarouselAutoplay=()=> {
-return(
+return(   
     <>
+
 <Carousel>
-  <Carousel.Item interval={1000}>
+  <Carousel.Item int erval={1000}>
     <img
       className="d-block w-100"
-      src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg"
-      width="100"
+      src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/seleccion-fondo.jpg"
+      width="50"
       height="250" 
       alt="First slide"
     />
@@ -23,7 +24,7 @@ return(
       className="d-block w-100"
       src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg"
       height="250" 
-      width="100"
+      width="50"
       alt="Second slide"
     />
     <Carousel.Caption>
@@ -36,7 +37,7 @@ return(
       className="d-block w-100"
       src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg"
       height="250" 
-      width="100"
+      width="50"
       alt="Third slide"
     />
     <Carousel.Caption>

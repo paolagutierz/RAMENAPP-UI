@@ -18,11 +18,12 @@ const FooterContent = () =>
   ));
 
 const PageFooter = () => (
-  <Footer position="fixed" bottom="0" background="light-5" pad="medium">
+  <Footer position="fixed" bottom="10" background="light-5" pad="medium">
     <Box align="center" gap="small">
       <WabiIcon color="brand" size="50px" />
       <Text alignSelf="center" color="brand" weight="bold">
-        WABI-SABI
+      {"Copyright © Wabi-Sabi"} {new Date().getFullYear()}
+          {"."}
       </Text>
     </Box>
     <FooterContent />
