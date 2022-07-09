@@ -3,9 +3,14 @@ import Page from "../components/Page";
 import { Box, Grommet } from 'grommet';
 
 const Menu = (props) => {
-  return <Page>
-<Box {...props}/>
-  </Page>;
+return (
+  <Page>
+<Box {...props}
+
+
+/>
+  </Page>
+)
 };
 
 export default Menu;
