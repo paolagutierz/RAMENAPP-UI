@@ -1,10 +1,11 @@
 import React from "react";
-import { Box } from "grommet";
+import { Box, Grommet } from "grommet";
+import { grommet as light } from "grommet/themes";
 import Carousel from "react-bootstrap/Carousel";
 
 const CarouselAutoplay = () => {
   return (
-    <Box flex>
+    <Box>
       <Carousel>
         <Carousel.Item interval={1000}>
           <img

@@ -26,24 +26,20 @@ const FooterNav = () => (
 );
 
 export const FooterFinish = () => (
-  <Grommet theme={light} full>
-    <Box>
-      <Footer background="light-4" pad="small" height="xsmall">
-        <Box align="center" direction="row" gap="medium">
-          <Anchor
-            gap="3px"
-            href="/"
-            icon={<WabiIcon color="brand" size="40" />}
-            label="Wabi-Sabi"
-          />
-        </Box>
-        <FooterNav />
-        <Text textAlign="center" size="xsmall">
-          ©Copyright
-        </Text>
-      </Footer>
-    </Box>{" "}
-  </Grommet>
+  <Footer background="light-4" pad="small" height="xsmall" fill="horizontal">
+    <Box direction="row" gap="medium">
+      <Anchor
+        gap="3px"
+        href="/"
+        icon={<WabiIcon color="brand" size="40" />}
+        label="Wabi-Sabi"
+      />
+    </Box>
+    <FooterNav />
+    <Text textAlign="center" size="xsmall">
+      ©Copyright
+    </Text>
+  </Footer>
 );
 
 export default FooterFinish;
