@@ -26,12 +26,7 @@ const FooterNav = () => (
 );
 
 export const FooterFinish = () => (
-  <Footer
-    background="light-4"
-    pad="small"
-    height="xsmall"
-    fill="horizontal"
-    elevation="small">
+  <Footer background="light-4" pad="xsmall" height="xsmall" fill="horizontal">
     <Box direction="row" gap="medium">
       <Anchor
         gap="3px"
