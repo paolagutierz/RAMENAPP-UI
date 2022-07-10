@@ -1,28 +1,16 @@
+import React from "react";
 import Page from "../components/Page";
-import React, { useContext } from "react";
-import { Box, Card, Grid, ResponsiveContext, Text } from "grommet";
+import { Box } from "grommet";
+import ProductCard from "../components/ProductCard";
 
-const cards = Array(20)
-  .fill()
-  .map((_, i) => <Text key={i}>{`Card ${i}`}</Text>);
-
-export const Menu = () => {
-  const size = useContext(ResponsiveContext);
+const Menu = (props) => {
   return (
     <Page>
-      <Box pad="large" fle>
-        <Grid columns={size !== "small" ? "small" : "100%"} gap="small">
-          {cards.map((card, index) => (
-            <Card pad="large" key={index}>
-              {card}
-            </Card>
-          ))}
-        </Grid>
+      <Box>
+        <ProductCard></ProductCard>
       </Box>
     </Page>
   );
 };
-
-Menu.storyName = "Responsive cards";
 
 export default Menu;
