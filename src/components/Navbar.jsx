@@ -1,5 +1,4 @@
 import React from "react";
-import { grommet as light } from "grommet/themes";
 import { Anchor, Box, Header, Menu, ResponsiveContext, Grommet } from "grommet";
 import { Menu as MenuIcon } from "grommet-icons";
 import {

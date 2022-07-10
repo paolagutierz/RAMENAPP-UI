@@ -1,15 +1,14 @@
 import { Box, Grommet } from "grommet";
-import { grommet as light } from "grommet/themes";
-import { Header, Main } from "grommet";
+import { Main } from "grommet";
 import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const Page = ({ children }) => {
   return (
-    <Box flex={true} pad="xsmall" direction="column" align="center">
+    <Box pad="xsmall" direction="column" align="center">
       <Navbar></Navbar>
-      <Main pad="small"> {children}</Main>
+      <Main pad="large"> {children}</Main>
       <Footer></Footer>
     </Box>
   );
