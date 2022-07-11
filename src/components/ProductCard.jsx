@@ -1,23 +1,33 @@
-import React, { useContext } from "react";
-import { Box, Card, Grid, ResponsiveContext, Text } from "grommet";
+import React from "react";
+import { Attraction, Car } from "grommet-icons";
+import { Anchor, Box, Button, Text } from "grommet";
 
-const cards = Array(3)
-  .fill()
-  .map((_, i) => <Text key={i}>{`Card ${i}`}</Text>);
-
-export const ProductCard = () => {
-  const size = useContext(ResponsiveContext);
-  return (
-    <Box pad="large" direction="row">
-      <Grid columns={size !== "small" ? "small" : "100%"} gap="small">
-        {cards.map((card, index) => (
-          <Card pad="large" key={index}>
-            {card}
-          </Card>
-        ))}
-      </Grid>
+const SimpleBox = () => (
+  <Box
+    direction="row-responsive"
+    justify="center"
+    align="center"
+    pad="xlarge"
+    background="dark-2"
+    gap="medium">
+    <Box
+      pad="large"
+      align="center"
+      background={{ color: "light-2", opacity: "strong" }}
+      round
+      gap="small">
+      <Attraction size="large" />
+      <Text>Party</Text>
+      <Anchor href="" label="Link" />
+      <Button label="Button" onClick={() => {}} />
     </Box>
-  );
-};
+    <Box pad="large" align="center" background="dark-3" round gap="small">
+      <Car size="large" color="light-2" />
+      <Text>Travel</Text>
+      <Anchor href="" label="Link" />
+      <Button label="Button" onClick={() => {}} />
+    </Box>
+  </Box>
+);
 
-export default ProductCard;
+export default SimpleBox;
