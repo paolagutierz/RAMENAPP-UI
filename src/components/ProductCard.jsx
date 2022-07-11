@@ -7,11 +7,11 @@ const SimpleBox = () => (
     direction="row-responsive"
     justify="center"
     align="center"
-    pad="xlarge"
+    pad="medium"
     background="dark-2"
     gap="medium">
     <Box
-      pad="large"
+      pad="medium"
       align="center"
       background={{ color: "light-2", opacity: "strong" }}
       round
@@ -21,7 +21,7 @@ const SimpleBox = () => (
       <Anchor href="" label="Link" />
       <Button label="Button" onClick={() => {}} />
     </Box>
-    <Box pad="large" align="center" background="dark-3" round gap="small">
+    <Box pad="medium" align="center" background="dark-3" round gap="small">
       <Car size="large" color="light-2" />
       <Text>Travel</Text>
       <Anchor href="" label="Link" />

@@ -6,9 +6,11 @@ import Navbar from "./Navbar";
 
 const Page = ({ children }) => {
   return (
-    <Box pad="xsmall" direction="column" align="center">
+    <Box height={{ min: "100vh" }} direction="column" align="center">
       <Navbar></Navbar>
-      <Main pad="large"> {children}</Main>
+      <Main pad="large" flex={{ grow: "1" }}>
+        {children}
+      </Main>
       <Footer></Footer>
     </Box>
   );
