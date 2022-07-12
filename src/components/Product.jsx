@@ -30,6 +30,7 @@ const Product = ({ image, name, price, description, quantity, id }) => {
       </Heading>
       <Text size="small">{price}</Text>
       <TextInput value={quantity} onChange={}/>
+      <Button size="small" icon={<Add />} primary />
       <Paragraph size="small">{description}</Paragraph>
       <Button label="AÑADIR" onClick={(e) => {}} />
     </Box>
