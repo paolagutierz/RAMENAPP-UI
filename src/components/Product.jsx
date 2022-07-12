@@ -1,8 +1,16 @@
 import React from "react";
-import { Heading, Box, Button, Paragraph, Image, Text } from "grommet";
+import {
+  Heading,
+  Box,
+  Button,
+  Paragraph,
+  Image,
+  Text,
+  TextInput,
+} from "grommet";
 import { useHistory } from "react-router";
 
-const Product = ({ image, name, price, description, id }) => {
+const Product = ({ image, name, price, description, quantity, id }) => {
   const history = useHistory();
   const handleRedirect = (e, path) => {
     e.preventDefault();
@@ -21,8 +29,9 @@ const Product = ({ image, name, price, description, id }) => {
         {name}
       </Heading>
       <Text size="small">{price}</Text>
+      <TextInput value={quantity} onChange={}/>
       <Paragraph size="small">{description}</Paragraph>
-      <Button label="Button" onClick={() => {}} />
+      <Button label="AÑADIR" onClick={(e) => {}} />
     </Box>
   );
 };
