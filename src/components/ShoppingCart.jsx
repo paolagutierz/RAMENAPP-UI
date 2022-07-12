@@ -45,7 +45,6 @@ export const ShoppingCart = () => (
       </TableFooter>
     </Table>
   </Box>
-  // </Grommet>
 );
 
 export default ShoppingCart;
